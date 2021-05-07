@@ -1,0 +1,5 @@
+read_verilog -sv cosine_gen.v
+hierarchy -check -top cosine_gen
+prep -top cosine_gen
+write_verilog parsed.v
+sim -clock clk -vcd cosine.vcd
